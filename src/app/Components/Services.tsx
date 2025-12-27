@@ -1,5 +1,4 @@
 import Image from "next/image"
-import { Service } from "../Interfaces/interfaces"
 import { SevicesContent } from "../data/data"
 
 
@@ -9,7 +8,7 @@ function Services() {
                   {SevicesContent.map((ser, index) => (
                         <div className="" key={index}>
                               <div className="relative aspect-4/3 w-full overflow-hidden mb-5">
-                                    <Image src={ser.image} alt={ser.alt} fill className=""></Image>
+                                    <Image src={ser.image} alt={ser.alt} fill sizes="(max-width: 768px) 100%"></Image>
                               </div>
                               <div className="text-[#333333]">
                                     <h2 className="text-[24px] font-bold mb-3">{ser.title}</h2>

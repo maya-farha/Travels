@@ -7,7 +7,7 @@ import { useState } from "react";
 
 
 function Slider<T>({
-      spaceBetween = 20, 
+      spaceBetween = 20,
       slidesPerView = 1,
       breakpoints,
       data,
@@ -18,12 +18,12 @@ function Slider<T>({
       const [swiperInstance, setSwiperInstance] = useState<any>(null);
 
       return (
-            <div className="relative"> 
-                  <div className="flex justify-between items-center mb-15 mt-30.75">
-                        <h2 className="text-2xl font-bold">{title}</h2>
+            <div className="relative">
+                  <div className="flex flex-col justify-center md:flex-row md:justify-between items-center gap-3.5 mb-15 mt-30.75">
+                        <h2 className="text-center text-2xl font-bold">{title}</h2>
                         <SliderArrow swiper={swiperInstance} />
                   </div>
-                  
+
                   <Swiper
                         className=""
                         spaceBetween={spaceBetween}
@@ -31,7 +31,7 @@ function Slider<T>({
                         speed={speed}
                         onSlideChange={() => console.log("slide change")}
                         breakpoints={breakpoints}
-                        onSwiper={(swiper) => setSwiperInstance(swiper)} 
+                        onSwiper={(swiper) => setSwiperInstance(swiper)}
 
                   >
                         {data?.map((item, index) => (

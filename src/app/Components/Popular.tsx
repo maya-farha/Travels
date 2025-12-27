@@ -12,7 +12,7 @@ function Popular() {
                         {travels.map((travel, index) => (
                               <div key={index} className="border border-[#EFEFEF] rounded-3xl">
                                     <div className="relative aspect-4/3 w-full overflow-hidden mb-5">
-                                          <Image src={travel.img} alt="" fill></Image>
+                                          <Image src={travel.img} alt="travel_image" fill sizes="(max-width: 768px) 100%"></Image>
                                     </div>
                                     <div className="p-6">
 
@@ -22,10 +22,10 @@ function Popular() {
                                                 <p className="inline text-[48px] text-[#FA8B02] font-bold ml-2.5 ">{travel.days}</p>
                                                 <span className="text-[#333333] opacity-60">/day</span>
                                           </div>
-                                          
+
                                           <div>
                                                 {travel.service.map((ser, index) => (
-                                                      <div className="flex gap-4 py-4">
+                                                      <div className="flex gap-4 py-4" key={index}>
                                                             <img src={ser.image} alt={ser.alt}></img>
                                                             <p>{ser.title}</p>
                                                       </div>

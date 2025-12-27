@@ -39,7 +39,7 @@ function HeroHome() {
       return (
             <header className="flex flex-col justify-center items-center h-screen w-full bg-[url('/Hero_Home.png')] bg-cover bg-no-repeat bg-center">
                   <h1 className="font-podcast text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl text-white">Enjoy in the best way!</h1>
-                  <h3 className="text-2xl mt-4">Enjoy our services for your trip anytime</h3>
+                  <h3 className="text-2xl mt-4 text-white">Enjoy our services for your trip anytime</h3>
                   <div>
                         {/* select option */}
                         <Options optionsItem={SelectOptions}></Options>

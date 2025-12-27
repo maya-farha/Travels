@@ -56,7 +56,7 @@ function BookSection() {
                                     <div className="relative">
                                           <input
                                                 type="text"
-                                                id="time"
+                                                id="date"
                                                 placeholder="Select the date"
                                                 onFocus={(e) => (e.target.type = "date")}
                                                 onBlur={(e) => {
